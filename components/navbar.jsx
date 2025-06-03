@@ -4,7 +4,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import TypewriterText from "@/components/typewriter-text";
-import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import {
+  SunIcon,
+  MoonIcon,
+  CurrencyBangladeshiIcon,
+  InformationCircleIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -38,24 +43,27 @@ export default function Navbar() {
         </Link>
 
         {/* links */}
-        <div className="flex gap-8 text-sm sm:text-lg">
+        <div className="flex gap-4 sm:gap-8 text-sm sm:text-lg items-center justify-center">
           <Link
             href="#pricing"
-            className="hover:font-bold transition-all duration-150"
+            className="group transition-all duration-150 flex gap-2 items-center justify-center"
           >
-            <span className="align-middle">Pricing</span>
+            <CurrencyBangladeshiIcon className="w-6 h-6 transition-transform duration-500 group-hover:rotate-360 group-active:-rotate-90" />
+            <span className="hidden sm:inline-block">Pricing</span>
           </Link>
+
           <Link
             href="#about"
-            className="hover:font-bold transition-all duration-150"
+            className="group transition-all duration-150 flex gap-2 items-center justify-center"
           >
-            <span className="align-middle">About Us</span>
+            <InformationCircleIcon className="w-6 h-6 transition-transform duration-500 group-hover:rotate-360 group-active:-rotate-90" />
+            <span className="hidden sm:inline-block">About Us</span>
           </Link>
 
           {/* theme toggle */}
           <button
             onClick={toggleTheme}
-            className="transition-transform duration-300 hover:-rotate-90 active:-rotate-90"
+            className="transition-transform duration-500 hover:-rotate-360 active:-rotate-90"
             aria-label="Toggle Theme"
           >
             {isDark ? (
