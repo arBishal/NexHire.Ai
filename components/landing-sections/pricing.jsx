@@ -1,6 +1,6 @@
 export default function Pricing() {
     return (
-      <section id="pricing" className="w-full py-24 flex flex-col items-center">
+      <section id="pricing" className="max-w-5xl h-screen w-full px-6 py-24 flex flex-col justify-center items-center">
         <h2 className="text-5xl font-extrabold text-center mb-4">Pricing</h2>
         <p className="text-lg text-center max-w-2xl mb-12">
           Whether you're looking for a job or hiring your next teammate, <br />

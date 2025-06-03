@@ -4,7 +4,7 @@ export default function Intro() {
     return (
       <section
         id="intro"
-        className="h-screen text-center flex flex-col items-center justify-center gap-4 -mt-30"
+        className="max-w-5xl h-screen text-center flex flex-col items-center justify-center gap-4 px-6 py-24 -mt-30"
       >
         <div className="max-w-5xl font-extrabold text-6xl font-mono">
           <h1>

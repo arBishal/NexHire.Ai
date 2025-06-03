@@ -2,7 +2,7 @@ export default function About() {
     return (
       <section
         id="about"
-        className="flex flex-col gap-4 py-24 max-w-3xl text-justify sm:text-center"
+        className="max-w-5xl h-screen flex flex-col gap-4 px-6 py-24 justify-center items-center max-w-3xl text-justify sm:text-center"
       >
         <h2 className="text-5xl font-extrabold text-center">About Us</h2>
         <p className="text-lg font-light">

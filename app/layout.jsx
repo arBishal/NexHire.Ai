@@ -23,9 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased flex flex-col min-h-screen scroll-smooth font-sans">
+      <body className="antialiased min-h-screen scroll-smooth font-sans">
         <Navbar />
-        <main className="mx-auto px-6 py-8 max-w-5xl w-full flex-grow">
+        <main className="mx-auto py-8 w-full flex-grow">
           {children}
         </main>
         <Footer />
