@@ -45,7 +45,7 @@ export default function Navbar() {
         {/* links */}
         <div className="flex gap-4 sm:gap-8 text-sm sm:text-lg items-center justify-center">
           <Link
-            href="#pricing"
+            href="/#pricing"
             className="group transition-all duration-150 flex gap-2 items-center justify-center"
           >
             <CurrencyBangladeshiIcon className="w-6 h-6 transition-transform duration-500 group-hover:rotate-360 group-active:-rotate-90" />
@@ -53,7 +53,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="#about"
+            href="/#about"
             className="group transition-all duration-150 flex gap-2 items-center justify-center"
           >
             <InformationCircleIcon className="w-6 h-6 transition-transform duration-500 group-hover:rotate-360 group-active:-rotate-90" />
