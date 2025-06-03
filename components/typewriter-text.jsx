@@ -6,7 +6,7 @@ export default function TypewriterText({ logo }) {
   const defaultText = "<span class='text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500'>NexHire.Ai</span>";
 
   return (
-    <div className={logo ? "text-xl" : "text-6xl font-extrabold"}>
+    <div className={logo ? "text-lg sm:text-xl" : "text-4xl sm:text-6xl font-extrabold"}>
       {logo ? (
         <Typewriter
           onInit={(typewriter) => {
