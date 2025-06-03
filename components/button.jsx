@@ -1,22 +1,52 @@
-"use client"
+'use client';
 
-export default function Button({ children, variant = 'solid', className = '', ...props }) {
+import Link from 'next/link';
+import { twMerge } from 'tailwind-merge';
+
+export default function BaseButton({
+  children,
+  href,
+  onClick,
+  variant = 'solid',
+  className = '',
+  ...props
+}) {
   const baseStyles =
-    'px-6 py-2 rounded transition-all duration-300 text-base sm:text-lg cursor-pointer w-full';
+    'px-6 py-2 rounded transition-all duration-300 text-base sm:text-lg cursor-pointer';
 
   const variants = {
     solid:
-      'bg-[var(--foreground)] text-[var(--background)] hover:opacity-80 active:scale-95',
+      'bg-foreground text-background hover:opacity-80 active:scale-95 w-full',
     ghost:
-      'bg-transparent text-[var(--foreground)] border border-[var(--foreground)] hover:bg-[var(--foreground)] hover:text-[var(--background)] active:scale-95',
+      'bg-transparent text-foreground hover:bg-foreground/10 active:bg-foreground/20 w-fit',
   };
 
+  const combinedClassName = twMerge(
+    baseStyles,
+    variants[variant],
+    className
+  );
+
+  // If it's a link, render <Link>
+  if (href) {
+    return (
+      <Link href={href} className={combinedClassName} {...props}>
+        {children}
+      </Link>
+    );
+  }
+
+  // Otherwise, render <button>
   return (
     <button
-      className={`${baseStyles} ${variants[variant]} ${className}`}
+      onClick={onClick}
+      className={combinedClassName}
       {...props}
     >
       {children}
     </button>
   );
 }
+
+
+
