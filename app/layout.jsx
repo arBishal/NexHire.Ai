@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased min-h-screen scroll-smooth font-sans">
         <Navbar />
-        <main className="mx-auto py-8 w-full flex-grow">
+        <main className="mx-auto w-full flex-grow">
           {children}
         </main>
         <Footer />
