@@ -1,10 +1,9 @@
 export default function Footer() {
   return (
-    <div className="px-6 py-4 h-18 w-full  border-t border-border-transparent font-mono">
-      <div className="max-w-5xl m-auto grid grid-cols-3">
-        <span className="text-left">AI-HACKATHON </span>
-        <span className="text-center">DYNAMIC SOLUTION INNOVATORS LTD.</span>
-        <span className="text-right">CYBERDYNE-SYSTEMS</span>
+    <div className="px-6 py-4 min-h-18 w-full  border-t border-border-transparent font-mono text-base sm:text-lg">
+      <div className="max-w-5xl m-auto flex gap-2 flex-col sm:flex-row justify-between items-center">
+        <span className="text-left">NexHire.Ai &copy; 2025 </span>
+        <span className="text-right">Being created by: <a href="https://github.com/arBishal" className="hover:underline">arBishal</a></span>
       </div>
     </div>
   );

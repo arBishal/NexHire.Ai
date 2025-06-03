@@ -4,16 +4,16 @@ export default function Intro() {
     return (
       <section
         id="intro"
-        className="max-w-5xl h-screen text-center flex flex-col items-center justify-center gap-4 px-6 py-24 -mt-30"
+        className="max-w-5xl h-screen text-center flex flex-col items-center justify-center gap-4 px-6 py-24"
       >
-        <div className="max-w-5xl font-extrabold text-6xl font-mono">
+        <div className="max-w-5xl font-extrabold text-4xl sm:text-6xl font-mono">
           <h1>
             Hire, and Get Hired!
             <br />
             Try <span className="inline-block align-middle"><TypewriterText /></span>
           </h1>
         </div>
-        <div className="text-lg font-light mt-4 text-justify sm:text-center max-w-3xl">
+        <div className="text-base sm:text-lg font-light mt-4 text-justify sm:text-center max-w-3xl">
           <p>
             NexHire.ai revolutionizes hiring with <b>AI-powered</b> precision,
             tailoring resumes for job seekers to land interviews and ranking

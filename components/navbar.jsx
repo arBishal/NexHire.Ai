@@ -9,9 +9,11 @@ export default function Navbar() {
   return (
     <nav className="px-6 py-4 sticky top-0 z-10 h-18 w-full flex items-center justify-center backdrop-blur-sm border-b border-border-transparent font-mono">
       <div className="max-w-5xl w-full flex justify-between">
+        
+        {/* logo */}
         <Link href="/#intro">
           {pathname === "/" ? (
-            <div className="text-xl font-bold group">
+            <div className="font-bold group text-xl sm:text-2xl">
               nexhire
               <span className="font-light group-hover:font-bold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-500 group-hover:to-blue-500 duration-150">.ai</span>
             </div>
@@ -19,18 +21,20 @@ export default function Navbar() {
             <TypewriterText logo />
           )}
         </Link>
-        <div className="flex gap-8">
+        
+        {/* links */}
+        <div className="flex gap-8 text-sm sm:text-lg">
           <Link
             href="#pricing"
             className="hover:font-bold transition-all duration-150"
           >
-            Pricing
+            <span className="align-middle">Pricing</span>
           </Link>
           <Link
             href="#about"
             className="hover:font-bold transition-all duration-150"
           >
-            About Us
+            <span className="align-middle">About Us</span>
           </Link>
         </div>
       </div>

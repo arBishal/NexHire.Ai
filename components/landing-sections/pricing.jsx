@@ -1,8 +1,8 @@
 export default function Pricing() {
     return (
-      <section id="pricing" className="max-w-5xl h-screen w-full px-6 py-24 flex flex-col justify-center items-center">
-        <h2 className="text-5xl font-extrabold text-center mb-4">Pricing</h2>
-        <p className="text-lg text-center max-w-2xl mb-12">
+      <section id="pricing" className="max-w-5xl min-h-screen w-full px-6 py-24 flex flex-col justify-center items-center">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4">Pricing</h2>
+        <p className="text-base sm:text-lg text-center max-w-2xl mb-12">
           Whether you're looking for a job or hiring your next teammate, <br />
           <b>NexHire.ai</b> has a plan for you.
         </p>
@@ -13,7 +13,7 @@ export default function Pricing() {
             <h3 className="text-2xl font-semibold">Free for Candidates</h3>
             <p>Empowering job seekers to stand out with AI.</p>
             <p className="text-4xl font-bold">
-              $0<span className="text-lg font-medium">/mo</span>
+              $0<span className="text-base sm:text-lg font-medium">/mo</span>
             </p>
             <ul className="space-y-2">
               <li>✓ 3 tailored resume suggestions per month</li>
@@ -27,7 +27,7 @@ export default function Pricing() {
             <h3 className="text-2xl font-semibold">Enterprise for Recruiters</h3>
             <p>Smarter candidate screening for fast-growing startups.</p>
             <p className="text-4xl font-bold">
-              $49.99<span className="text-lg font-medium">/mo</span>
+              $49.99<span className="text-base sm:text-lg font-medium">/mo</span>
             </p>
             <ul className="space-y-2">
               <li>✓ Unlimited candidate screening</li>
