@@ -13,7 +13,7 @@ export default function Intro() {
             Try <span className="inline-block align-middle"><TypewriterText /></span>
           </h1>
         </div>
-        <div className="text-base sm:text-lg font-light mt-4 text-justify sm:text-center max-w-3xl">
+        <div className="text-base sm:text-xl font-light mt-4 text-justify sm:text-center max-w-3xl">
           <p>
             NexHire.ai revolutionizes hiring with <b>AI-powered</b> precision,
             tailoring resumes for job seekers to land interviews and ranking
