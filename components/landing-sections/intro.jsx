@@ -27,8 +27,8 @@ export default function Intro() {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-5/6">
-        <Button> I'm a Candidate</Button>
-        <Button> I'm a Recruiter</Button>
+        <Button href="/candidate"> I'm a Candidate</Button>
+        <Button href={"/recruiter"}> I'm a Recruiter</Button>
       </div>
     </section>
   );
