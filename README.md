@@ -1,8 +1,22 @@
 # NexHire.Ai
 
-## Under Construction!
+### (Under Construction!)
 
-### How to Run
+**NexHire.Ai** is an AI-powered platform designed to optimize the job application and candidate screening process. It provides:
+
+* `Job Seekers` with personalized, role-specific resume optimization and cultural-fit suggestions.
+* `Recruiters` with affordable, micro-tailored candidate ranking based on job and company culture.
+
+Using pre-trained LLMs, **NexHire.Ai** delivers smart matching, transparent scoring, and a dual experience for both sides of the hiring funnel.
+
+## Tech Stack
+
+* Next.js v15
+* TailwindCSS v4
+
+...and more to come!
+
+## How to Run
 
 First, install the packages:
 
