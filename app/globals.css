@@ -33,6 +33,8 @@
     transparent
   );
   --color-card-bg: color-mix(in srgb, var(--foreground) 5%, transparent);
+  --color-text-inactive: color-mix(in srgb, var(--foreground) 70%, transparent);
+  --color-text-description: color-mix(in srgb, var(--foreground) 85%, transparent);
 }
 
 body {

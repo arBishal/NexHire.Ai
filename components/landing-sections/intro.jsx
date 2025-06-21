@@ -1,13 +1,18 @@
+import Link from "next/link";
+
 import TypewriterText from "@/components/effects/typewriter-text";
-import Button from "@/components/base/button";
 
 export default function Intro() {
   return (
     <section
       id="intro"
-      className="max-w-5xl h-screen text-center flex flex-col items-center justify-center gap-8 px-6 py-24"
+      className="max-w-5xl h-screen text-center flex flex-col items-center justify-between gap-8 px-6 pt-48 pb-16"
     >
-      <div className="max-w-5xl font-extrabold text-4xl sm:text-6xl font-mono">
+      <div className="flex flex-col items-center justify-center gap-8">
+        <div className="max-w-5xl flex flex-col gap-2 font-extrabold text-4xl sm:text-6xl font-mono">
+        <span className="text-xl font-light text-text-inactive">
+          Context-Aware. Culture-Smart. Clarity-Focused.
+        </span>
         <h1>
           Hire, and Get Hired!
           <br />
@@ -17,19 +22,23 @@ export default function Intro() {
           </span>
         </h1>
       </div>
-      <div className="text-base sm:text-xl font-light text-justify sm:text-center max-w-3xl">
+      <div className="text-base sm:text-xl text-text-description font-light text-justify sm:text-center max-w-3xl">
         <p>
-          <span className="font-bold">NexHire.ai</span> revolutionizes hiring with <b>AI-powered</b> precision,
-          tailoring resumes for job seekers to land interviews and ranking
-          candidates for startups to find the perfect cultural fit. Experience
-          micro-tailored matching that outshines generic tools, built for
-          today’s dynamic job market.
+          AI that reads between the lines—literally. <span className="font-bold">NexHire.ai</span> evaluates
+          resumes and job descriptions with context and cultural nuance. No
+          manual screening, no guesswork. Just smart, LLM-powered matches in
+          seconds.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-5/6">
-        <Button href="/candidate"> I'm a Candidate</Button>
-        <Button href={"/recruiter"}> I'm a Recruiter</Button>
       </div>
+
+      <Link
+        href="/#problem"
+        className="flex flex-col items-center animate-bounce cursor-pointer"
+      >
+        <span className="text-2xl">↓</span>
+        <span className="text-sm sm:text-lg font-mono">Hear Us Out!</span>
+      </Link>
     </section>
   );
 }

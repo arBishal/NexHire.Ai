@@ -6,7 +6,7 @@ import About from "@/components/landing-sections/about";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-12 items-center justify-center w-full h-full">
+    <div className="flex flex-col items-center justify-center w-full h-full">
       <Intro />
       <hr className="w-full border-border-transparent" />
       <Pricing />
