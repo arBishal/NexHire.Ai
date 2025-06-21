@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import TypewriterText from "@/components/typewriter-text";
+import TypewriterText from "@/components/effects/typewriter-text";
 import {
   SunIcon,
   MoonIcon,

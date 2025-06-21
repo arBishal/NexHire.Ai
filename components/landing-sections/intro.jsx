@@ -1,5 +1,5 @@
-import TypewriterText from "@/components/typewriter-text";
-import Button from "@/components/button";
+import TypewriterText from "@/components/effects/typewriter-text";
+import Button from "@/components/base/button";
 
 export default function Intro() {
   return (

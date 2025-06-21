@@ -1,4 +1,4 @@
-import Button from "@/components/button";
+import Button from "@/components/base/button";
 
 export default function Intro() {
   return (
