@@ -1,17 +1,13 @@
-"use client";
-
 import Intro from "@/components/landing-sections/intro";
-import Pricing from "@/components/landing-sections/pricing";
-import About from "@/components/landing-sections/about";
+import Problem from "@/components/landing-sections/problem";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full">
       <Intro />
       <hr className="w-full border-border-transparent" />
-      <Pricing />
-      <hr className="w-full border-border-transparent" />
-      <About />
+      <Problem />
+
     </div>
   );
 }
