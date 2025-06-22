@@ -11,7 +11,7 @@ export default function Business() {
       </div>
 
       <Link
-        href="/#relevency"
+        href="/#relevance"
         className="flex flex-col items-center animate-bounce cursor-pointer"
       >
         <span className="text-2xl">↓</span>
