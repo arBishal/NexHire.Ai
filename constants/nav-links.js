@@ -24,8 +24,8 @@ export const NAV_LINKS = [
     href: "/#business",
   },
   {
-    label: "Relevancy",
-    href: "/#relevancy",
+    label: "Relevance",
+    href: "/#relevance",
   },
   {
     label: "What's Next?",
