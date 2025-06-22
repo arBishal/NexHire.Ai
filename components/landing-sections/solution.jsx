@@ -13,7 +13,7 @@ export default function Solution() {
       <div className="flex flex-col gap-12 w-full">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500 text-6xl font-extrabold font-mono">nexhire.ai</span>
 
-        <div className="text-text-description text-xl flex flex-col gap-4 w-xl">
+        <div className="text-text-description text-xl flex flex-col gap-4 min-w-xl w-full items-center justify-center">
             <span>AI-assistant for both ends of the funnel.</span>
             <div className="w-full h-px bg-gradient-to-r from-transparent via-text-description to-transparent" />
             <span>Powered by LLMs, no training needed.</span>
@@ -21,6 +21,10 @@ export default function Solution() {
             <span>Transparent scoring & suggestions.</span>
           </div>
       </div>
+
+      <h4 className="text-2xl font-semibold italic">
+        “Built to fix hiring—with context, culture, and clarity.”
+      </h4>
 
       <Link
         href="/#features"
