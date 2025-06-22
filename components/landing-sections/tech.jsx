@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function Tech() {
+  
   return (
     <section
       id="tech"
@@ -9,6 +10,7 @@ export default function Tech() {
       <div className="flex flex-col gap-4 justify-center items-center">
         <h2 className="text-4xl font-bold font-mono"> Tech Stack</h2>
       </div>
+
 
       <Link
         href="/#business"

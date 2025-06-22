@@ -6,7 +6,7 @@ import Next from "@/components/landing-sections/next";
 import Problem from "@/components/landing-sections/problem";
 import Relevance from "@/components/landing-sections/relevance";
 import Solution from "@/components/landing-sections/solution";
-import Tech from "@/components/landing-sections/tec";
+import Tech from "@/components/landing-sections/tech";
 
 export default function Home() {
   return (

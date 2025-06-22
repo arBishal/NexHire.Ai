@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ComparisonTable from "./comparison-table";
 
 export default function Edge() {
   return (
@@ -9,6 +10,8 @@ export default function Edge() {
       <div className="flex flex-col gap-4 justify-center items-center">
         <h2 className="text-4xl font-bold font-mono"> Strategic Edge</h2>
       </div>
+
+      <ComparisonTable/>
 
       <Link
         href="/#tech"
