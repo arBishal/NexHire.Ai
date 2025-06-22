@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="transition-all duration-300 flex hover:text-foreground hover:scale-105"
+              className="transition-all duration-300 flex hover:text-foreground hover:font-extrabold"
             >
               <span className="hidden sm:inline-block">{link.label}</span>
             </Link>
