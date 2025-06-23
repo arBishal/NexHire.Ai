@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+// import { SiNextdotjs, SiTailwindcss, SiHuggingface, } from "react-icons/si";
+
 export default function Tech() {
   
   return (
