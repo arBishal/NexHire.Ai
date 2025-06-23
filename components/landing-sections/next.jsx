@@ -21,7 +21,7 @@ export default function Next() {
           </span>
         </div>
 
-        <h4 className="text-2xl font-semibold italic w-3xl">
+        <h4 className="text-2xl font-semibold italic w-4xl">
           “The best hire isn’t the loudest resume—it’s the best contextual fit.”
         </h4>
       </div>
