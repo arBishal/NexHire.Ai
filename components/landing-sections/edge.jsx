@@ -13,6 +13,10 @@ export default function Edge() {
 
       <ComparisonTable/>
 
+      <h4 className="text-2xl font-semibold italic w-3xl">
+        “It's accurate, transparent, and works for both sides of hiring—with zero onboarding friction.”
+      </h4>
+
       <Link
         href="/#tech"
         className="flex flex-col items-center animate-bounce cursor-pointer"
