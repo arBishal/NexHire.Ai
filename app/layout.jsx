@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <main className="mx-auto w-full flex-grow">
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

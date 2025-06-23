@@ -24,10 +24,6 @@ export const NAV_LINKS = [
     href: "/#business",
   },
   {
-    label: "Relevance",
-    href: "/#relevance",
-  },
-  {
     label: "What's Next?",
     href: "/#next",
   },

@@ -4,7 +4,6 @@ import Features from "@/components/landing-sections/features";
 import Intro from "@/components/landing-sections/intro";
 import Next from "@/components/landing-sections/next";
 import Problem from "@/components/landing-sections/problem";
-import Relevance from "@/components/landing-sections/relevance";
 import Solution from "@/components/landing-sections/solution";
 import Tech from "@/components/landing-sections/tech";
 
@@ -24,8 +23,6 @@ export default function Home() {
       <Tech />
       <hr className="w-full border-border-transparent" />
       <Business />
-      <hr className="w-full border-border-transparent" />
-      <Relevance />
       <hr className="w-full border-border-transparent" />
       <Next />
     </div>
