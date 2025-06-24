@@ -28,27 +28,21 @@ const data = [
   },
   {
     feature: 'Resume Ranking',
-    nexhire: { ok: true, note: 'Pretrained LLMs' },
-    ats: { ok: false, note: 'Custom model training' },
+    nexhire: { ok: true, note: 'Yes' },
+    ats: { ok: false, note: 'None' },
     builders: { ok: false, note: 'Only score, no ranking' },
-  },
-  {
-    feature: 'No Training Required',
-    nexhire: { ok: true, note: 'Pretrained LLMs' },
-    ats: { ok: false, note: 'Custom model training' },
-    builders: { ok: true, note: '' },
   },
     {
     feature: 'Cultural Fit Analysis',
-    nexhire: { ok: true, note: 'Pretrained LLMs' },
-    ats: { ok: false, note: 'Custom model training' },
-    builders: { ok: false, note: '' },
+    nexhire: { ok: true, note: 'Yes' },
+    ats: { ok: false, note: 'None' },
+    builders: { ok: false, note: 'None' },
   },
   {
     feature: 'Embeddings for Similarity Search',
     nexhire: { ok: true, note: 'Built-in' },
     ats: { ok: false, note: 'Absent or premium-tier' },
-    builders: { ok: false, note: '' },
+    builders: { ok: false, note: 'None' },
   },
 ];
 
