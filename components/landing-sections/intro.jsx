@@ -24,7 +24,7 @@ export default function Intro() {
       </div>
       <div className="text-base sm:text-xl text-text-description font-light text-justify sm:text-center max-w-3xl">
         <p>
-          AI that reads between the lines—literally. <span className="font-bold">NexHire.ai</span> evaluates
+          AI that reads between the lines—literally. <span className="font-bold">NexHire.Ai</span> evaluates
           resumes and job descriptions with context and cultural nuance. No
           manual screening, no guesswork. Just smart, LLM-powered matches in
           seconds.

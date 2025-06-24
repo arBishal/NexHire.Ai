@@ -9,31 +9,43 @@ const Icon = ({ status }) =>
 
 const data = [
   {
-    feature: 'LLM-powered contextual scoring',
+    feature: 'LLM-powered Contextual Scoring',
     nexhire: { ok: true, note: 'Skills + Culture' },
     ats: { ok: false, note: 'Mostly keyword-based' },
     builders: { ok: false, note: 'Formatting only' },
   },
   {
-    feature: 'Bidirectional matching',
+    feature: 'Bidirectional Matching',
     nexhire: { ok: true, note: 'Seeker + Recruiter' },
     ats: { ok: false, note: 'One-sided (mostly recruiter)' },
     builders: { ok: false, note: 'Mostly seeker only' },
   },
   {
-    feature: 'Transparent score breakdown',
+    feature: 'Transparent Score Breakdown',
     nexhire: { ok: true, note: 'Human-readable' },
     ats: { ok: false, note: 'Black-box rankings' },
     builders: { ok: false, note: 'None' },
   },
   {
-    feature: 'No training required',
+    feature: 'Resume Ranking',
+    nexhire: { ok: true, note: 'Pretrained LLMs' },
+    ats: { ok: false, note: 'Custom model training' },
+    builders: { ok: false, note: 'Only score, no ranking' },
+  },
+  {
+    feature: 'No Training Required',
     nexhire: { ok: true, note: 'Pretrained LLMs' },
     ats: { ok: false, note: 'Custom model training' },
     builders: { ok: true, note: '' },
   },
+    {
+    feature: 'Cultural Fit Analysis',
+    nexhire: { ok: true, note: 'Pretrained LLMs' },
+    ats: { ok: false, note: 'Custom model training' },
+    builders: { ok: false, note: '' },
+  },
   {
-    feature: 'Embeddings for similarity search',
+    feature: 'Embeddings for Similarity Search',
     nexhire: { ok: true, note: 'Built-in' },
     ats: { ok: false, note: 'Absent or premium-tier' },
     builders: { ok: false, note: '' },
@@ -55,7 +67,7 @@ export default function FeatureComparison() {
         <tbody className="divide-y divide-border-transparent">
           {data.map((item, i) => (
             <tr key={i}>
-              <td className="px-4 py-3 font-medium text-base text-text-subtitle border-r border-border-transparent">{item.feature}</td>
+              <td className="px-4 py-3 font-bold text-base text-text-subtitle border-r border-border-transparent">{item.feature}</td>
               <td className="px-4 py-3 text-text-description text-base font-light">
                 <Icon status={item.nexhire.ok} />
                 {item.nexhire.note}
