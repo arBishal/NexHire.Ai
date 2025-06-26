@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="px-6 py-4 fixed top-0 z-10 h-18 w-full flex items-center justify-center backdrop-blur-xl border-b border-border-transparent font-mono">
+    <nav className="px-6 py-4 fixed top-0 z-10 h-18 w-full flex items-center justify-center backdrop-blur-lg border-b border-border-transparent font-mono">
       <div className="w-full flex justify-center gap-36">
         {/* logo */}
         <Link href="/#intro">

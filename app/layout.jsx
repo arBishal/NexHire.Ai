@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}  scroll-smooth`}>
-      <body className="antialiased h-full flex flex-col font-sans">
+      <body className="antialiased h-full flex flex-col font-sans" data-pattern="stripes">
         <Navbar />
         <main className="mx-auto w-full flex-grow">
           {children}
