@@ -8,7 +8,6 @@ import {
   SunIcon,
   MoonIcon,
   ArrowRightIcon,
-  ArrowLeftIcon,
 } from "@heroicons/react/24/outline";
 
 import { NAV_LINKS_DEFAULT, NAV_LINKS_PITCH } from "@/constants/nav-links";
@@ -41,7 +40,7 @@ export default function Navbar() {
           {pathname === "/" ? (
             <div className="font-bold group text-xl sm:text-2xl">
               nexhire
-              <span className="font-light group-hover:font-bold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-teal-500 group-hover:to-blue-500 duration-150">
+              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500 duration-150">
                 .ai
               </span>
             </div>

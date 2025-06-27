@@ -23,30 +23,30 @@ export const NAV_LINKS_DEFAULT = [
 export const NAV_LINKS_PITCH = [
   {
     label: "Problem",
-    href: "/#problem",
+    href: "/pitch/#problem",
   },
   {
     label: "Solution",
-    href: "/#solution",
+    href: "/pitch/#solution",
   },
   {
     label: "Features",
-    href: "/#features",
+    href: "/pitch/#features",
   },
   {
     label: "Strategic Edge",
-    href: "/#edge",
+    href: "/pitch/#edge",
   },
   {
     label: "Tech Stack",
-    href: "/#tech",
+    href: "/pitch/#tech",
   },
   {
     label: "Business Model",
-    href: "/#business",
+    href: "/pitch/#business",
   },
   {
     label: "What's Next?",
-    href: "/#next",
+    href: "/pitch/#next",
   },
 ];

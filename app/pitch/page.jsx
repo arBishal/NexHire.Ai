@@ -27,7 +27,7 @@ export default function Pitch() {
       <hr className="w-full border-border-transparent" />
       <Next />
     </div>
-    <div className="lg:hidden flex items-center justify-center h-dvh p-6 text-center text-lg font-semibold">
+    <div className="lg:hidden flex items-center justify-center h-full px-6 py-60 text-center text-lg font-semibold">
       Please go to Desktop mode to view the Pitch. <br/>
       Thank you.
     </div>
