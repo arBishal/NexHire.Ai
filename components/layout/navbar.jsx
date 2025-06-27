@@ -37,7 +37,7 @@ export default function Navbar() {
         }`}
       >
         {/* logo */}
-        <Link href="/#intro">
+        <Link href="/#hero">
           {pathname === "/" ? (
             <div className="font-bold group text-xl sm:text-2xl">
               nexhire
