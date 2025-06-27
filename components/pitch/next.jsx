@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-import Footer from "@/components/layout/footer";
-
 export default function Next() {
   return (
     <section
@@ -25,7 +23,6 @@ export default function Next() {
           “The best hire isn’t the loudest resume—it’s the best contextual fit.”
         </h4>
       </div>
-      <Footer />
     </section>
   );
 }
