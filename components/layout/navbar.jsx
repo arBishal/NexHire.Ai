@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import TypewriterText from "@/components/effects/typewriter-text";
 import {
   SunIcon,
   MoonIcon,
@@ -31,22 +30,18 @@ export default function Navbar() {
   return (
     <nav className="px-6 py-4 fixed top-0 z-10 h-18 w-full flex items-center justify-center backdrop-blur-sm border-b border-border-transparent font-mono">
       <div
-        className={`w-full flex justify-between gap-4 ${
+        className={`w-full flex justify-between items-center gap-4 ${
           pathname === "/pitch" ? "max-w-7xl" : "max-w-4xl"
         }`}
       >
         {/* logo */}
         <Link href="/#hero">
-          {pathname === "/" ? (
             <div className="font-bold group text-xl sm:text-2xl">
               nexhire
-              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500 duration-150">
+              <span className="font-normal text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500 duration-150">
                 .ai
               </span>
             </div>
-          ) : (
-            <TypewriterText logo />
-          )}
         </Link>
 
         {/* links */}
