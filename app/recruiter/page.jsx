@@ -1,6 +1,6 @@
 import Button from "@/components/base/button";
 
-export default function Intro() {
+export default function Recruiter() {
   return (
     <div className="flex flex-col gap-12 items-center justify-center w-full h-full">
       <section

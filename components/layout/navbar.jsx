@@ -7,9 +7,11 @@ import TypewriterText from "@/components/effects/typewriter-text";
 import {
   SunIcon,
   MoonIcon,
-  CurrencyBangladeshiIcon,
-  InformationCircleIcon,
+  ArrowRightIcon,
+  ArrowLeftIcon,
 } from "@heroicons/react/24/outline";
+
+import { NAV_LINKS_DEFAULT, NAV_LINKS_PITCH } from "@/constants/nav-links";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -25,11 +27,17 @@ export default function Navbar() {
     setIsDark(!isDark);
   };
 
+  const navLinks = pathname === "/pitch" ? NAV_LINKS_PITCH : NAV_LINKS_DEFAULT;
+
   return (
     <nav className="px-6 py-4 fixed top-0 z-10 h-18 w-full flex items-center justify-center backdrop-blur-sm border-b border-border-transparent font-mono">
-      <div className="max-w-5xl w-full flex justify-between gap-4">
+      <div
+        className={`w-full flex justify-between gap-4 ${
+          pathname === "/pitch" ? "max-w-7xl" : "max-w-4xl"
+        }`}
+      >
         {/* logo */}
-        <Link href="/#intro">
+        <Link href="/#hero">
           {pathname === "/" ? (
             <div className="font-bold group text-xl sm:text-2xl">
               nexhire
@@ -43,22 +51,17 @@ export default function Navbar() {
         </Link>
 
         {/* links */}
-        <div className="flex gap-4 sm:gap-8 text-sm sm:text-lg items-center justify-center">
-          <Link
-            href="/#pricing"
-            className="group transition-all duration-150 flex gap-2 items-center justify-center"
-          >
-            <CurrencyBangladeshiIcon className="w-6 h-6 transition-transform duration-500 group-hover:rotate-360 group-active:-rotate-90" />
-            <span className="hidden sm:inline-block">Pricing</span>
-          </Link>
-
-          <Link
-            href="/#about"
-            className="group transition-all duration-150 flex gap-2 items-center justify-center"
-          >
-            <InformationCircleIcon className="w-6 h-6 transition-transform duration-500 group-hover:rotate-360 group-active:-rotate-90" />
-            <span className="hidden sm:inline-block">About Us</span>
-          </Link>
+        <div className="flex gap-4 sm:gap-8 text-sm lg:text-base xl:text-lg items-center justify-center">
+          {navLinks.map(({ label, href, icon }) => (
+            <Link
+              key={label}
+              href={href}
+              className={`group transition-all duration-150 flex gap-2 items-center justify-center ${ pathname === "/pitch" ? "hidden lg:flex" : "flex"}`}
+            >
+              {icon}
+              <span className="hidden sm:inline-block">{label}</span>
+            </Link>
+          ))}
 
           {/* theme toggle */}
           <button
@@ -72,6 +75,16 @@ export default function Navbar() {
               <MoonIcon className="w-6 h-6" />
             )}
           </button>
+
+          {pathname == "/" && (
+            <Link
+              href="/pitch"
+              className="hidden sm:flex justify-center gap-2 hover:gap-4 w-36 px-4 py-2 rounded text-base bg-foreground text-background font-semibold hover:brightness-80 transition-all duration-300"
+            >
+              Pitch
+              <ArrowRightIcon className="w-6 h-6" />
+            </Link>
+          )}
         </div>
       </div>
     </nav>

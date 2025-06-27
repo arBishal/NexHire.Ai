@@ -4,7 +4,7 @@ import Button from "@/components/base/button";
 export default function Intro() {
   return (
     <section
-      id="intro"
+      id="hero"
       className="max-w-5xl h-screen text-center flex flex-col items-center justify-center gap-8 px-6 py-24"
     >
       <div className="max-w-5xl font-extrabold text-4xl sm:text-6xl font-mono">
